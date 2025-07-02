@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 
 
 let tasks = [
@@ -11,6 +11,12 @@ export default function TaskDetail(){
     const {id} = useParams(); //grabs ID from url as a string
     const selectedTask = tasks.filter((task)=> task.Id===Number(id)) //converts id to a number to match task.Id
     const task = selectedTask[0]
+
+    if (!task){
+        return <p>Task Not Found</p>
+    }
+
+
     return (
         <div>
             <h1>{task.Title}</h1>

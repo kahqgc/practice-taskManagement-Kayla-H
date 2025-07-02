@@ -1,0 +1,22 @@
+#task-list {
+  background: linear-gradient(#ecd166, #f5a31f);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 2rem;
+  font-family: "Times New Roman";
+  font-weight: 500;
+}
+
+.task-item {
+  background-color: #c6e3f5;
+  padding: 1rem;
+  border: 1px solid #bfc931;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.task-item:hover {
+  background-color: #f2cc8f;
+  cursor: pointer;
+} 
